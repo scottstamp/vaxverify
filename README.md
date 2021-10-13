@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# VaxVerify
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A free, open-source "vaccine passport" verifier. Currently just Canada, planning to add European support soon.
 
-## Available Scripts
+### Information
 
-In the project directory, you can run:
+VaxVerify is an open-source verifier app for international standard "vaccine passport" QR proofs.
+These QR codes are digitally signed by their issuing party (typically a local government or health authority).
 
-### `yarn start`
+The majority of Canadian provinces using a QR proof system currently adopt the Smart Health Cards protocol (https://smarthealth.cards), a standard using JSON Web Tokens to securely encode health information.
+Information currently included by Canadian provinces includes: Full name, date of birth, vaccine history (COVID-19 related only) such as date, vaccine type and location received. Proofs may also store medical exemption information for people with exempted medical conditions. More information regarding exemptions is currently unknown. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 🇨🇦 Supported Provinces and Territories
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+VaxVerify currently supports the following Canadian provinces and territories:
 
-### `yarn test`
+* Alberta
+* British Colombia
+* Newfoundland and Labrador
+* Northwest Territories
+* Nova Scotia
+* Québec
+* Saskatchewan
+* Yukon
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Disclaimers
 
-### `yarn build`
+* This project is not affiliated with any government or health agency, in Canada or otherwise.
+* This app is intended for educational purposes and does not provide any warranty of any kind including data validation.
+* This application should not be used to collect personal data without the consent of the data owner. Furthermore, it cannot be used for verifying proof of vaccination in the context of the law on vaccination passports in any Canadian province or territory. **Merchants and venue owners must use the official application for their jurisdiction.**
+* The developer of this application disclaims any responsibility for illegal use of the application by a third party.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This is a React web application. A local copy can be served with the following commands:
 
-### `yarn eject`
+```
+git clone https://github.com/scottstamp/vaxverify.git
+cd vaxverify
+npm install
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+A production copy is also hosted at https://covid.xksc.org but note this version may not always be the latest commit.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Credits
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Huge thank you to @obrassard for his work on https://github.com/obrassard/shc-extractor which this project is largely based on. See his repo for more technical information and background.
