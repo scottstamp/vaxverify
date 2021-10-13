@@ -9,7 +9,6 @@ import HealthCard from '../components/HealthCard'
 
 export default function MainPage() {
     const [tabKey, setTabKey] = useState('text')
-    const [lastText, setLastText] = useState('')
     const [data, setData] = useState(undefined)
 
     const handleShc = async (text) => {
@@ -17,7 +16,6 @@ export default function MainPage() {
             var parsed = await parseShc(text)
 
             setData(parsed)
-            setLastText(text)
             setTabKey('info')
         }
     }
