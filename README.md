@@ -32,7 +32,7 @@ In addition to supporting Canadian standards, VaxVerify can decode records that 
 * European Union members
 * United Kingdom
 * USA
- - California
+  - California
 
 ### Disclaimers
 
