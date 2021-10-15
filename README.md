@@ -50,8 +50,8 @@ This is a React web application. A local copy can be served with the following c
 ```
 git clone https://github.com/scottstamp/vaxverify.git
 cd vaxverify
-npm install
-npm start
+yarn install
+yarn start
 ```
 
 A production copy is also hosted at https://covid.xksc.org but note this version may not always be the latest commit.
