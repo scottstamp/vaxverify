@@ -18,6 +18,7 @@ VaxVerify currently supports the following Canadian provinces and territories:
 
 * Alberta
 * British Colombia
+* Ontario
 * Newfoundland and Labrador
 * Northwest Territories
 * Nova Scotia
