@@ -1,6 +1,6 @@
 # VaxVerify
 
-A free, open-source "vaccine passport" verifier. Currently just Canada, planning to add European support soon.
+A free, open-source "vaccine passport" verifier.
 
 ### Information
 
@@ -8,7 +8,9 @@ VaxVerify is an open-source verifier app for international standard "vaccine pas
 These QR codes are digitally signed by their issuing party (typically a local government or health authority).
 
 The majority of Canadian provinces using a QR proof system currently adopt the Smart Health Cards protocol (https://smarthealth.cards), a standard using JSON Web Tokens to securely encode health information.
-Information currently included by Canadian provinces includes: Full name, date of birth, vaccine history (COVID-19 related only) such as date, vaccine type and location received. Proofs may also store medical exemption information for people with exempted medical conditions. More information regarding exemptions is currently unknown. 
+Information currently included by Canadian provinces includes: Full name, date of birth, vaccine history (COVID-19 related only) such as date, vaccine type and location received. Proofs may also store medical exemption information for people with exempted medical conditions. More information regarding exemptions is currently unknown.
+
+In addition to SHC, support has also recently been added for EU Green Pass proofs. This feature is currently in beta and may not work as expected. Please file an Issue if you experience any problems with EU Green Pass.
 
 ### 🇨🇦 Supported Provinces and Territories
 
@@ -22,6 +24,15 @@ VaxVerify currently supports the following Canadian provinces and territories:
 * Québec
 * Saskatchewan
 * Yukon
+
+### Other Supported Regions
+
+In addition to supporting Canadian standards, VaxVerify can decode records that comply with SMART Health Card or EU Green Pass standards. The following regions currently have validation support:
+
+* European Union members
+* United Kingdom
+* USA
+ - California
 
 ### Disclaimers
 
