@@ -89,6 +89,16 @@ const keys = {
 		crv: "P-256",
 		x: "kIaIeOhhxpiN13sDs6RKVzCpvxxObI9adKF5YEmKngM",
 		y: "AZPQ7CHd3UHp0i4a4ua1FhIq8SJ__BuHgDESuK3A_zQ"
+	},
+	"https://myvaccinerecord.cdph.ca.gov/creds": {
+		friendly: "State of California Department of Public Health",
+		kty: "EC",
+		kid: "7JvktUpf1_9NPwdM-70FJT3YdyTiSe2IvmVxxgDSRb0",
+		use: "sig",
+		alg: "ES256",
+		crv: "P-256",
+		x: "3dQz5ZlbazChP3U7bdqShfF0fvSXLXD9WMa1kqqH6i4",
+		y: "FV4AsWjc7ZmfhSiHsw2gjnDMKNLwNqi2jMLmJpiKWtE"
 	}
 }
 
